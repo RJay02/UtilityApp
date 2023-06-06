@@ -875,7 +875,7 @@ private: System::Void NumbersOnly(System::Object^ sender, System::EventArgs^ e) 
 			Amount->Text = Amount->Text + b->Text;
 	}
 private: System::Void button24_Click(System::Object^ sender, System::EventArgs^ e) {
-		Amount->Text = "0";
+			Amount->Text = "0";
 }
 };
 }
