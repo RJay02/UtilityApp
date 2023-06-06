@@ -72,17 +72,20 @@ namespace FirstFileForGUI {
 
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Panel^ panel7;
+	private: System::Windows::Forms::Label^ lblChange;
 
-	private: System::Windows::Forms::Label^ label7;
+
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::Label^ Amount;
+	private: System::Windows::Forms::Label^ Total;
 
-	private: System::Windows::Forms::Label^ label4;
+
 	private: System::Windows::Forms::Label^ label3;
 
 	private: System::Windows::Forms::Button^ button25;
-	private: System::Windows::Forms::ComboBox^ comboBox1;
+	private: System::Windows::Forms::ComboBox^ Pay;
+
 
 
 
@@ -185,8 +188,8 @@ private: System::Windows::Forms::Button^ button7;
 			this->button21 = (gcnew System::Windows::Forms::Button());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->panel7 = (gcnew System::Windows::Forms::Panel());
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
-			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->Pay = (gcnew System::Windows::Forms::ComboBox());
+			this->lblChange = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
@@ -195,7 +198,7 @@ private: System::Windows::Forms::Button^ button7;
 			this->button25 = (gcnew System::Windows::Forms::Button());
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->Amount = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->Total = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
@@ -408,8 +411,8 @@ private: System::Windows::Forms::Button^ button7;
 			// 
 			this->panel7->BackColor = System::Drawing::SystemColors::Control;
 			this->panel7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel7->Controls->Add(this->comboBox1);
-			this->panel7->Controls->Add(this->label7);
+			this->panel7->Controls->Add(this->Pay);
+			this->panel7->Controls->Add(this->lblChange);
 			this->panel7->Controls->Add(this->label8);
 			this->panel7->Controls->Add(this->label9);
 			this->panel7->Location = System::Drawing::Point(318, 11);
@@ -417,28 +420,28 @@ private: System::Windows::Forms::Button^ button7;
 			this->panel7->Size = System::Drawing::Size(320, 132);
 			this->panel7->TabIndex = 4;
 			// 
-			// comboBox1
+			// Pay
 			// 
-			this->comboBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Pay->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(187, 14);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(111, 39);
-			this->comboBox1->TabIndex = 3;
-			this->comboBox1->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::comboBox1_SelectedIndexChanged);
+			this->Pay->FormattingEnabled = true;
+			this->Pay->Location = System::Drawing::Point(187, 14);
+			this->Pay->Name = L"Pay";
+			this->Pay->Size = System::Drawing::Size(111, 45);
+			this->Pay->TabIndex = 3;
+			this->Pay->SelectedIndexChanged += gcnew System::EventHandler(this, &MyForm::comboBox1_SelectedIndexChanged);
 			// 
-			// label7
+			// lblChange
 			// 
-			this->label7->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->lblChange->BackColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->lblChange->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->lblChange->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label7->Location = System::Drawing::Point(187, 66);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(111, 42);
-			this->label7->TabIndex = 2;
-			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->lblChange->Location = System::Drawing::Point(187, 66);
+			this->lblChange->Name = L"lblChange";
+			this->lblChange->Size = System::Drawing::Size(111, 42);
+			this->lblChange->TabIndex = 2;
+			this->lblChange->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label8
 			// 
@@ -512,7 +515,7 @@ private: System::Windows::Forms::Button^ button7;
 			this->panel4->BackColor = System::Drawing::SystemColors::Control;
 			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->panel4->Controls->Add(this->Amount);
-			this->panel4->Controls->Add(this->label4);
+			this->panel4->Controls->Add(this->Total);
 			this->panel4->Controls->Add(this->label3);
 			this->panel4->Controls->Add(this->label2);
 			this->panel4->Location = System::Drawing::Point(3, 11);
@@ -535,17 +538,17 @@ private: System::Windows::Forms::Button^ button7;
 			this->Amount->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
 			this->Amount->Click += gcnew System::EventHandler(this, &MyForm::label5_Click);
 			// 
-			// label4
+			// Total
 			// 
-			this->label4->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->label4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->Total->BackColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->Total->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->Total->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(173, 70);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(111, 42);
-			this->label4->TabIndex = 2;
-			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->Total->Location = System::Drawing::Point(173, 70);
+			this->Total->Name = L"Total";
+			this->Total->Size = System::Drawing::Size(111, 42);
+			this->Total->TabIndex = 2;
+			this->Total->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label3
 			// 
@@ -819,6 +822,8 @@ private: System::Windows::Forms::Button^ button7;
 		}
 #pragma endregion
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+		Pay->Items->Add("Coins");
+		Pay->Items->Add("Card");
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -853,9 +858,34 @@ private: System::Void button34_Click(System::Object^ sender, System::EventArgs^ 
 private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	double PriceofItem = 1.50;
 }
 private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
+
+public: System::Void AddCost()
+	   {
+	try {
+		Total->Text = String::Format("{0:c2}");
+		}
+	catch (Exception^ ex)
+	{
+		MessageBox::Show(ex->Message);
+	}
+	   }
+	  private:System::Void Change()
+	  {
+		  try
+		  {
+			  double c,q;
+			  c = Convert::ToInt32(Amount->Text);
+			  lblChange->Text = String::Format("{0:c2}", (c - q));
+		  }
+		  catch (Exception^ ex)
+		  {
+			  MessageBox::Show(ex->Message);
+		  }
+	  }
 private: System::Void NumbersOnly(System::Object^ sender, System::EventArgs^ e) {
 
 	Button^ b = safe_cast<Button^>(sender);
