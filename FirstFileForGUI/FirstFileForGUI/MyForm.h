@@ -71,6 +71,7 @@ namespace FirstFileForGUI {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 	private: System::Windows::Forms::Label^ label1;
 
+
 	protected:
 
 	private:
@@ -87,40 +88,40 @@ namespace FirstFileForGUI {
 		void InitializeComponent(void)
 		{
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->button22 = (gcnew System::Windows::Forms::Button());
+			this->button23 = (gcnew System::Windows::Forms::Button());
+			this->button24 = (gcnew System::Windows::Forms::Button());
+			this->button19 = (gcnew System::Windows::Forms::Button());
+			this->button20 = (gcnew System::Windows::Forms::Button());
+			this->button21 = (gcnew System::Windows::Forms::Button());
+			this->button13 = (gcnew System::Windows::Forms::Button());
+			this->button17 = (gcnew System::Windows::Forms::Button());
+			this->button18 = (gcnew System::Windows::Forms::Button());
+			this->button16 = (gcnew System::Windows::Forms::Button());
+			this->button15 = (gcnew System::Windows::Forms::Button());
+			this->button14 = (gcnew System::Windows::Forms::Button());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->button12 = (gcnew System::Windows::Forms::Button());
+			this->button11 = (gcnew System::Windows::Forms::Button());
+			this->button10 = (gcnew System::Windows::Forms::Button());
+			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->button8 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
-			this->panel4 = (gcnew System::Windows::Forms::Panel());
-			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
+			this->panel5 = (gcnew System::Windows::Forms::Panel());
+			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
-			this->button3 = (gcnew System::Windows::Forms::Button());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->button7 = (gcnew System::Windows::Forms::Button());
-			this->button8 = (gcnew System::Windows::Forms::Button());
-			this->button9 = (gcnew System::Windows::Forms::Button());
-			this->button10 = (gcnew System::Windows::Forms::Button());
-			this->button11 = (gcnew System::Windows::Forms::Button());
-			this->button12 = (gcnew System::Windows::Forms::Button());
-			this->button14 = (gcnew System::Windows::Forms::Button());
-			this->button15 = (gcnew System::Windows::Forms::Button());
-			this->button16 = (gcnew System::Windows::Forms::Button());
-			this->button13 = (gcnew System::Windows::Forms::Button());
-			this->button17 = (gcnew System::Windows::Forms::Button());
-			this->button18 = (gcnew System::Windows::Forms::Button());
-			this->button19 = (gcnew System::Windows::Forms::Button());
-			this->button20 = (gcnew System::Windows::Forms::Button());
-			this->button21 = (gcnew System::Windows::Forms::Button());
-			this->button22 = (gcnew System::Windows::Forms::Button());
-			this->button23 = (gcnew System::Windows::Forms::Button());
-			this->button24 = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -148,6 +149,114 @@ namespace FirstFileForGUI {
 			this->panel1->Size = System::Drawing::Size(321, 375);
 			this->panel1->TabIndex = 0;
 			// 
+			// button22
+			// 
+			this->button22->Location = System::Drawing::Point(3, 252);
+			this->button22->Name = L"button22";
+			this->button22->Size = System::Drawing::Size(101, 77);
+			this->button22->TabIndex = 23;
+			this->button22->Text = L"button22";
+			this->button22->UseVisualStyleBackColor = true;
+			// 
+			// button23
+			// 
+			this->button23->Location = System::Drawing::Point(110, 252);
+			this->button23->Name = L"button23";
+			this->button23->Size = System::Drawing::Size(101, 77);
+			this->button23->TabIndex = 22;
+			this->button23->Text = L"button23";
+			this->button23->UseVisualStyleBackColor = true;
+			// 
+			// button24
+			// 
+			this->button24->Location = System::Drawing::Point(213, 252);
+			this->button24->Name = L"button24";
+			this->button24->Size = System::Drawing::Size(101, 77);
+			this->button24->TabIndex = 21;
+			this->button24->Text = L"button24";
+			this->button24->UseVisualStyleBackColor = true;
+			// 
+			// button19
+			// 
+			this->button19->Location = System::Drawing::Point(3, 169);
+			this->button19->Name = L"button19";
+			this->button19->Size = System::Drawing::Size(101, 77);
+			this->button19->TabIndex = 20;
+			this->button19->Text = L"button19";
+			this->button19->UseVisualStyleBackColor = true;
+			// 
+			// button20
+			// 
+			this->button20->Location = System::Drawing::Point(108, 169);
+			this->button20->Name = L"button20";
+			this->button20->Size = System::Drawing::Size(101, 77);
+			this->button20->TabIndex = 19;
+			this->button20->Text = L"button20";
+			this->button20->UseVisualStyleBackColor = true;
+			// 
+			// button21
+			// 
+			this->button21->Location = System::Drawing::Point(213, 169);
+			this->button21->Name = L"button21";
+			this->button21->Size = System::Drawing::Size(101, 77);
+			this->button21->TabIndex = 18;
+			this->button21->Text = L"button21";
+			this->button21->UseVisualStyleBackColor = true;
+			// 
+			// button13
+			// 
+			this->button13->Location = System::Drawing::Point(3, 86);
+			this->button13->Name = L"button13";
+			this->button13->Size = System::Drawing::Size(101, 77);
+			this->button13->TabIndex = 17;
+			this->button13->Text = L"button13";
+			this->button13->UseVisualStyleBackColor = true;
+			// 
+			// button17
+			// 
+			this->button17->Location = System::Drawing::Point(108, 86);
+			this->button17->Name = L"button17";
+			this->button17->Size = System::Drawing::Size(101, 77);
+			this->button17->TabIndex = 16;
+			this->button17->Text = L"button17";
+			this->button17->UseVisualStyleBackColor = true;
+			// 
+			// button18
+			// 
+			this->button18->Location = System::Drawing::Point(213, 86);
+			this->button18->Name = L"button18";
+			this->button18->Size = System::Drawing::Size(101, 77);
+			this->button18->TabIndex = 15;
+			this->button18->Text = L"button18";
+			this->button18->UseVisualStyleBackColor = true;
+			// 
+			// button16
+			// 
+			this->button16->Location = System::Drawing::Point(3, 3);
+			this->button16->Name = L"button16";
+			this->button16->Size = System::Drawing::Size(101, 77);
+			this->button16->TabIndex = 14;
+			this->button16->Text = L"button16";
+			this->button16->UseVisualStyleBackColor = true;
+			// 
+			// button15
+			// 
+			this->button15->Location = System::Drawing::Point(108, 3);
+			this->button15->Name = L"button15";
+			this->button15->Size = System::Drawing::Size(101, 77);
+			this->button15->TabIndex = 13;
+			this->button15->Text = L"button15";
+			this->button15->UseVisualStyleBackColor = true;
+			// 
+			// button14
+			// 
+			this->button14->Location = System::Drawing::Point(213, 3);
+			this->button14->Name = L"button14";
+			this->button14->Size = System::Drawing::Size(101, 77);
+			this->button14->TabIndex = 12;
+			this->button14->Text = L"button14";
+			this->button14->UseVisualStyleBackColor = true;
+			// 
 			// panel2
 			// 
 			this->panel2->BackColor = System::Drawing::SystemColors::ButtonShadow;
@@ -169,6 +278,114 @@ namespace FirstFileForGUI {
 			this->panel2->Size = System::Drawing::Size(522, 709);
 			this->panel2->TabIndex = 1;
 			// 
+			// button12
+			// 
+			this->button12->Location = System::Drawing::Point(387, 230);
+			this->button12->Name = L"button12";
+			this->button12->Size = System::Drawing::Size(101, 77);
+			this->button12->TabIndex = 11;
+			this->button12->Text = L"button12";
+			this->button12->UseVisualStyleBackColor = true;
+			// 
+			// button11
+			// 
+			this->button11->Location = System::Drawing::Point(260, 230);
+			this->button11->Name = L"button11";
+			this->button11->Size = System::Drawing::Size(101, 77);
+			this->button11->TabIndex = 10;
+			this->button11->Text = L"button11";
+			this->button11->UseVisualStyleBackColor = true;
+			// 
+			// button10
+			// 
+			this->button10->Location = System::Drawing::Point(134, 230);
+			this->button10->Name = L"button10";
+			this->button10->Size = System::Drawing::Size(101, 77);
+			this->button10->TabIndex = 9;
+			this->button10->Text = L"button10";
+			this->button10->UseVisualStyleBackColor = true;
+			// 
+			// button9
+			// 
+			this->button9->Location = System::Drawing::Point(9, 230);
+			this->button9->Name = L"button9";
+			this->button9->Size = System::Drawing::Size(101, 77);
+			this->button9->TabIndex = 8;
+			this->button9->Text = L"button9";
+			this->button9->UseVisualStyleBackColor = true;
+			// 
+			// button8
+			// 
+			this->button8->Location = System::Drawing::Point(387, 125);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(101, 77);
+			this->button8->TabIndex = 7;
+			this->button8->Text = L"button8";
+			this->button8->UseVisualStyleBackColor = true;
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(260, 125);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(101, 77);
+			this->button7->TabIndex = 6;
+			this->button7->Text = L"button7";
+			this->button7->UseVisualStyleBackColor = true;
+			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(134, 125);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(101, 77);
+			this->button6->TabIndex = 5;
+			this->button6->Text = L"button6";
+			this->button6->UseVisualStyleBackColor = true;
+			// 
+			// button5
+			// 
+			this->button5->Location = System::Drawing::Point(9, 125);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(101, 77);
+			this->button5->TabIndex = 4;
+			this->button5->Text = L"button5";
+			this->button5->UseVisualStyleBackColor = true;
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(387, 20);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(101, 77);
+			this->button4->TabIndex = 3;
+			this->button4->Text = L"button4";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// button3
+			// 
+			this->button3->Location = System::Drawing::Point(260, 20);
+			this->button3->Name = L"button3";
+			this->button3->Size = System::Drawing::Size(101, 77);
+			this->button3->TabIndex = 2;
+			this->button3->Text = L"button3";
+			this->button3->UseVisualStyleBackColor = true;
+			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(134, 20);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(101, 77);
+			this->button2->TabIndex = 1;
+			this->button2->Text = L"button2";
+			this->button2->UseVisualStyleBackColor = true;
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(9, 20);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(101, 77);
+			this->button1->TabIndex = 0;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
 			// panel3
 			// 
 			this->panel3->BackColor = System::Drawing::SystemColors::ButtonShadow;
@@ -181,14 +398,14 @@ namespace FirstFileForGUI {
 			this->panel3->Size = System::Drawing::Size(818, 169);
 			this->panel3->TabIndex = 2;
 			// 
-			// panel4
+			// panel6
 			// 
-			this->panel4->BackColor = System::Drawing::SystemColors::Window;
-			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel4->Location = System::Drawing::Point(18, 16);
-			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(256, 132);
-			this->panel4->TabIndex = 3;
+			this->panel6->BackColor = System::Drawing::SystemColors::Window;
+			this->panel6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel6->Location = System::Drawing::Point(541, 16);
+			this->panel6->Name = L"panel6";
+			this->panel6->Size = System::Drawing::Size(256, 132);
+			this->panel6->TabIndex = 4;
 			// 
 			// panel5
 			// 
@@ -199,14 +416,14 @@ namespace FirstFileForGUI {
 			this->panel5->Size = System::Drawing::Size(256, 132);
 			this->panel5->TabIndex = 4;
 			// 
-			// panel6
+			// panel4
 			// 
-			this->panel6->BackColor = System::Drawing::SystemColors::Window;
-			this->panel6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel6->Location = System::Drawing::Point(541, 16);
-			this->panel6->Name = L"panel6";
-			this->panel6->Size = System::Drawing::Size(256, 132);
-			this->panel6->TabIndex = 4;
+			this->panel4->BackColor = System::Drawing::SystemColors::Window;
+			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel4->Location = System::Drawing::Point(18, 16);
+			this->panel4->Name = L"panel4";
+			this->panel4->Size = System::Drawing::Size(256, 132);
+			this->panel4->TabIndex = 3;
 			// 
 			// dataGridView1
 			// 
@@ -247,222 +464,6 @@ namespace FirstFileForGUI {
 			this->label1->TabIndex = 4;
 			this->label1->Text = L"label1";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// button1
-			// 
-			this->button1->Location = System::Drawing::Point(9, 20);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(101, 77);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
-			// 
-			// button2
-			// 
-			this->button2->Location = System::Drawing::Point(134, 20);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(101, 77);
-			this->button2->TabIndex = 1;
-			this->button2->Text = L"button2";
-			this->button2->UseVisualStyleBackColor = true;
-			// 
-			// button3
-			// 
-			this->button3->Location = System::Drawing::Point(260, 20);
-			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(101, 77);
-			this->button3->TabIndex = 2;
-			this->button3->Text = L"button3";
-			this->button3->UseVisualStyleBackColor = true;
-			// 
-			// button4
-			// 
-			this->button4->Location = System::Drawing::Point(387, 20);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(101, 77);
-			this->button4->TabIndex = 3;
-			this->button4->Text = L"button4";
-			this->button4->UseVisualStyleBackColor = true;
-			// 
-			// button5
-			// 
-			this->button5->Location = System::Drawing::Point(9, 125);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(101, 77);
-			this->button5->TabIndex = 4;
-			this->button5->Text = L"button5";
-			this->button5->UseVisualStyleBackColor = true;
-			// 
-			// button6
-			// 
-			this->button6->Location = System::Drawing::Point(134, 125);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(101, 77);
-			this->button6->TabIndex = 5;
-			this->button6->Text = L"button6";
-			this->button6->UseVisualStyleBackColor = true;
-			// 
-			// button7
-			// 
-			this->button7->Location = System::Drawing::Point(260, 125);
-			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(101, 77);
-			this->button7->TabIndex = 6;
-			this->button7->Text = L"button7";
-			this->button7->UseVisualStyleBackColor = true;
-			// 
-			// button8
-			// 
-			this->button8->Location = System::Drawing::Point(387, 125);
-			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(101, 77);
-			this->button8->TabIndex = 7;
-			this->button8->Text = L"button8";
-			this->button8->UseVisualStyleBackColor = true;
-			// 
-			// button9
-			// 
-			this->button9->Location = System::Drawing::Point(9, 230);
-			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(101, 77);
-			this->button9->TabIndex = 8;
-			this->button9->Text = L"button9";
-			this->button9->UseVisualStyleBackColor = true;
-			// 
-			// button10
-			// 
-			this->button10->Location = System::Drawing::Point(134, 230);
-			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(101, 77);
-			this->button10->TabIndex = 9;
-			this->button10->Text = L"button10";
-			this->button10->UseVisualStyleBackColor = true;
-			// 
-			// button11
-			// 
-			this->button11->Location = System::Drawing::Point(260, 230);
-			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(101, 77);
-			this->button11->TabIndex = 10;
-			this->button11->Text = L"button11";
-			this->button11->UseVisualStyleBackColor = true;
-			// 
-			// button12
-			// 
-			this->button12->Location = System::Drawing::Point(387, 230);
-			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(101, 77);
-			this->button12->TabIndex = 11;
-			this->button12->Text = L"button12";
-			this->button12->UseVisualStyleBackColor = true;
-			// 
-			// button14
-			// 
-			this->button14->Location = System::Drawing::Point(213, 3);
-			this->button14->Name = L"button14";
-			this->button14->Size = System::Drawing::Size(101, 77);
-			this->button14->TabIndex = 12;
-			this->button14->Text = L"button14";
-			this->button14->UseVisualStyleBackColor = true;
-			// 
-			// button15
-			// 
-			this->button15->Location = System::Drawing::Point(108, 3);
-			this->button15->Name = L"button15";
-			this->button15->Size = System::Drawing::Size(101, 77);
-			this->button15->TabIndex = 13;
-			this->button15->Text = L"button15";
-			this->button15->UseVisualStyleBackColor = true;
-			// 
-			// button16
-			// 
-			this->button16->Location = System::Drawing::Point(3, 3);
-			this->button16->Name = L"button16";
-			this->button16->Size = System::Drawing::Size(101, 77);
-			this->button16->TabIndex = 14;
-			this->button16->Text = L"button16";
-			this->button16->UseVisualStyleBackColor = true;
-			// 
-			// button13
-			// 
-			this->button13->Location = System::Drawing::Point(3, 86);
-			this->button13->Name = L"button13";
-			this->button13->Size = System::Drawing::Size(101, 77);
-			this->button13->TabIndex = 17;
-			this->button13->Text = L"button13";
-			this->button13->UseVisualStyleBackColor = true;
-			// 
-			// button17
-			// 
-			this->button17->Location = System::Drawing::Point(108, 86);
-			this->button17->Name = L"button17";
-			this->button17->Size = System::Drawing::Size(101, 77);
-			this->button17->TabIndex = 16;
-			this->button17->Text = L"button17";
-			this->button17->UseVisualStyleBackColor = true;
-			// 
-			// button18
-			// 
-			this->button18->Location = System::Drawing::Point(213, 86);
-			this->button18->Name = L"button18";
-			this->button18->Size = System::Drawing::Size(101, 77);
-			this->button18->TabIndex = 15;
-			this->button18->Text = L"button18";
-			this->button18->UseVisualStyleBackColor = true;
-			// 
-			// button19
-			// 
-			this->button19->Location = System::Drawing::Point(3, 169);
-			this->button19->Name = L"button19";
-			this->button19->Size = System::Drawing::Size(101, 77);
-			this->button19->TabIndex = 20;
-			this->button19->Text = L"button19";
-			this->button19->UseVisualStyleBackColor = true;
-			// 
-			// button20
-			// 
-			this->button20->Location = System::Drawing::Point(108, 169);
-			this->button20->Name = L"button20";
-			this->button20->Size = System::Drawing::Size(101, 77);
-			this->button20->TabIndex = 19;
-			this->button20->Text = L"button20";
-			this->button20->UseVisualStyleBackColor = true;
-			// 
-			// button21
-			// 
-			this->button21->Location = System::Drawing::Point(213, 169);
-			this->button21->Name = L"button21";
-			this->button21->Size = System::Drawing::Size(101, 77);
-			this->button21->TabIndex = 18;
-			this->button21->Text = L"button21";
-			this->button21->UseVisualStyleBackColor = true;
-			// 
-			// button22
-			// 
-			this->button22->Location = System::Drawing::Point(3, 252);
-			this->button22->Name = L"button22";
-			this->button22->Size = System::Drawing::Size(101, 77);
-			this->button22->TabIndex = 23;
-			this->button22->Text = L"button22";
-			this->button22->UseVisualStyleBackColor = true;
-			// 
-			// button23
-			// 
-			this->button23->Location = System::Drawing::Point(110, 252);
-			this->button23->Name = L"button23";
-			this->button23->Size = System::Drawing::Size(101, 77);
-			this->button23->TabIndex = 22;
-			this->button23->Text = L"button23";
-			this->button23->UseVisualStyleBackColor = true;
-			// 
-			// button24
-			// 
-			this->button24->Location = System::Drawing::Point(213, 252);
-			this->button24->Name = L"button24";
-			this->button24->Size = System::Drawing::Size(101, 77);
-			this->button24->TabIndex = 21;
-			this->button24->Text = L"button24";
-			this->button24->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
