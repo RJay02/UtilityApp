@@ -79,7 +79,7 @@ namespace FirstFileForGUI {
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Button^ button26;
+
 	private: System::Windows::Forms::Button^ button25;
 	private: System::Windows::Forms::ComboBox^ comboBox1;
 
@@ -131,6 +131,9 @@ private: System::Windows::Forms::Button^ button29;
 private: System::Windows::Forms::Button^ button28;
 private: System::Windows::Forms::Button^ button27;
 private: System::Windows::Forms::Label^ label10;
+private: System::Windows::Forms::Button^ button6;
+private: System::Windows::Forms::Button^ button1;
+private: System::Windows::Forms::Button^ button7;
 
 
 
@@ -178,7 +181,6 @@ private: System::Windows::Forms::Label^ label10;
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->button25 = (gcnew System::Windows::Forms::Button());
-			this->button26 = (gcnew System::Windows::Forms::Button());
 			this->button19 = (gcnew System::Windows::Forms::Button());
 			this->button20 = (gcnew System::Windows::Forms::Button());
 			this->button21 = (gcnew System::Windows::Forms::Button());
@@ -212,6 +214,9 @@ private: System::Windows::Forms::Label^ label10;
 			this->button40 = (gcnew System::Windows::Forms::Button());
 			this->Label6 = (gcnew System::Windows::Forms::Label());
 			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->panel3->SuspendLayout();
 			this->panel6->SuspendLayout();
@@ -250,14 +255,16 @@ private: System::Windows::Forms::Label^ label10;
 			this->panel3->Controls->Add(this->panel4);
 			this->panel3->Location = System::Drawing::Point(12, 428);
 			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(978, 192);
+			this->panel3->Size = System::Drawing::Size(978, 160);
 			this->panel3->TabIndex = 2;
 			// 
 			// panel6
 			// 
 			this->panel6->BackColor = System::Drawing::SystemColors::Control;
 			this->panel6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel6->Controls->Add(this->button26);
+			this->panel6->Controls->Add(this->button7);
+			this->panel6->Controls->Add(this->button6);
+			this->panel6->Controls->Add(this->button1);
 			this->panel6->Controls->Add(this->button25);
 			this->panel6->Location = System::Drawing::Point(650, 16);
 			this->panel6->Name = L"panel6";
@@ -377,21 +384,12 @@ private: System::Windows::Forms::Label^ label10;
 			// 
 			// button25
 			// 
-			this->button25->Location = System::Drawing::Point(3, 13);
+			this->button25->Location = System::Drawing::Point(4, 3);
 			this->button25->Name = L"button25";
-			this->button25->Size = System::Drawing::Size(101, 77);
+			this->button25->Size = System::Drawing::Size(134, 59);
 			this->button25->TabIndex = 11;
 			this->button25->Text = L"button25";
 			this->button25->UseVisualStyleBackColor = true;
-			// 
-			// button26
-			// 
-			this->button26->Location = System::Drawing::Point(110, 13);
-			this->button26->Name = L"button26";
-			this->button26->Size = System::Drawing::Size(101, 77);
-			this->button26->TabIndex = 12;
-			this->button26->Text = L"button26";
-			this->button26->UseVisualStyleBackColor = true;
 			// 
 			// button19
 			// 
@@ -727,11 +725,38 @@ private: System::Windows::Forms::Label^ label10;
 			this->label10->TabIndex = 60;
 			this->label10->Text = L"label6";
 			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(178, 3);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(134, 59);
+			this->button1->TabIndex = 12;
+			this->button1->Text = L"button1";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
+			// button6
+			// 
+			this->button6->Location = System::Drawing::Point(4, 66);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(134, 59);
+			this->button6->TabIndex = 13;
+			this->button6->Text = L"button6";
+			this->button6->UseVisualStyleBackColor = true;
+			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(178, 66);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(134, 59);
+			this->button7->TabIndex = 14;
+			this->button7->Text = L"button7";
+			this->button7->UseVisualStyleBackColor = true;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(996, 629);
+			this->ClientSize = System::Drawing::Size(996, 596);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
