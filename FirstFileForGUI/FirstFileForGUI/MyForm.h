@@ -39,9 +39,8 @@ namespace FirstFileForGUI {
 
 	private: System::Windows::Forms::Panel^ panel3;
 	private: System::Windows::Forms::Panel^ panel6;
-	private: System::Windows::Forms::Panel^ panel5;
+
 	private: System::Windows::Forms::Panel^ panel4;
-	private: System::Windows::Forms::DataGridView^ dataGridView1;
 
 
 
@@ -66,10 +65,11 @@ namespace FirstFileForGUI {
 
 
 
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
-	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
-	private: System::Windows::Forms::Label^ label1;
+
+
+
+
+
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Panel^ panel7;
 
@@ -167,13 +167,7 @@ private: System::Windows::Forms::Label^ label10;
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->panel6 = (gcnew System::Windows::Forms::Panel());
-			this->panel5 = (gcnew System::Windows::Forms::Panel());
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
-			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->Column1 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column2 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->Column3 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
-			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
@@ -222,7 +216,6 @@ private: System::Windows::Forms::Label^ label10;
 			this->panel3->SuspendLayout();
 			this->panel6->SuspendLayout();
 			this->panel4->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->panel7->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->SuspendLayout();
@@ -254,11 +247,10 @@ private: System::Windows::Forms::Label^ label10;
 			this->panel3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->panel3->Controls->Add(this->panel7);
 			this->panel3->Controls->Add(this->panel6);
-			this->panel3->Controls->Add(this->panel5);
 			this->panel3->Controls->Add(this->panel4);
 			this->panel3->Location = System::Drawing::Point(12, 428);
 			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(1334, 192);
+			this->panel3->Size = System::Drawing::Size(978, 192);
 			this->panel3->TabIndex = 2;
 			// 
 			// panel6
@@ -267,19 +259,10 @@ private: System::Windows::Forms::Label^ label10;
 			this->panel6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->panel6->Controls->Add(this->button26);
 			this->panel6->Controls->Add(this->button25);
-			this->panel6->Location = System::Drawing::Point(1057, 16);
+			this->panel6->Location = System::Drawing::Point(650, 16);
 			this->panel6->Name = L"panel6";
-			this->panel6->Size = System::Drawing::Size(256, 132);
+			this->panel6->Size = System::Drawing::Size(319, 132);
 			this->panel6->TabIndex = 4;
-			// 
-			// panel5
-			// 
-			this->panel5->BackColor = System::Drawing::SystemColors::Window;
-			this->panel5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel5->Location = System::Drawing::Point(413, 16);
-			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(256, 132);
-			this->panel5->TabIndex = 4;
 			// 
 			// panel4
 			// 
@@ -289,51 +272,11 @@ private: System::Windows::Forms::Label^ label10;
 			this->panel4->Controls->Add(this->label4);
 			this->panel4->Controls->Add(this->label3);
 			this->panel4->Controls->Add(this->label2);
-			this->panel4->Location = System::Drawing::Point(9, 16);
+			this->panel4->Location = System::Drawing::Point(3, 16);
 			this->panel4->Name = L"panel4";
-			this->panel4->Size = System::Drawing::Size(256, 132);
+			this->panel4->Size = System::Drawing::Size(309, 132);
 			this->panel4->TabIndex = 3;
 			this->panel4->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::panel4_Paint);
-			// 
-			// dataGridView1
-			// 
-			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(3) {
-				this->Column1,
-					this->Column2, this->Column3
-			});
-			this->dataGridView1->Location = System::Drawing::Point(1004, 12);
-			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(342, 410);
-			this->dataGridView1->TabIndex = 3;
-			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyForm::dataGridView1_CellContentClick);
-			// 
-			// Column1
-			// 
-			this->Column1->HeaderText = L"Item";
-			this->Column1->Name = L"Column1";
-			// 
-			// Column2
-			// 
-			this->Column2->HeaderText = L"Qty";
-			this->Column2->Name = L"Column2";
-			// 
-			// Column3
-			// 
-			this->Column3->HeaderText = L"Amount";
-			this->Column3->Name = L"Column3";
-			// 
-			// label1
-			// 
-			this->label1->BackColor = System::Drawing::SystemColors::ButtonShadow;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(1115, 315);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(169, 51);
-			this->label1->TabIndex = 4;
-			this->label1->Text = L"label1";
-			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label2
 			// 
@@ -387,9 +330,9 @@ private: System::Windows::Forms::Label^ label10;
 			this->panel7->Controls->Add(this->label7);
 			this->panel7->Controls->Add(this->label8);
 			this->panel7->Controls->Add(this->label9);
-			this->panel7->Location = System::Drawing::Point(718, 16);
+			this->panel7->Location = System::Drawing::Point(319, 16);
 			this->panel7->Name = L"panel7";
-			this->panel7->Size = System::Drawing::Size(256, 132);
+			this->panel7->Size = System::Drawing::Size(320, 132);
 			this->panel7->TabIndex = 4;
 			// 
 			// label7
@@ -788,9 +731,7 @@ private: System::Windows::Forms::Label^ label10;
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1358, 629);
-			this->Controls->Add(this->label1);
-			this->Controls->Add(this->dataGridView1);
+			this->ClientSize = System::Drawing::Size(996, 629);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
@@ -801,7 +742,6 @@ private: System::Windows::Forms::Label^ label10;
 			this->panel3->ResumeLayout(false);
 			this->panel6->ResumeLayout(false);
 			this->panel4->ResumeLayout(false);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->panel7->ResumeLayout(false);
 			this->panel2->ResumeLayout(false);
 			this->panel2->PerformLayout();
