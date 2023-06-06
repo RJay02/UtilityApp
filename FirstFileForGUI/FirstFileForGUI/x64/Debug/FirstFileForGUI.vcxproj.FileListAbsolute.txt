@@ -6,3 +6,7 @@ C:\Users\rupes\Documents\UNI STUFF\Utility App Code\FirstFileForGUI\FirstFileFor
 C:\Users\rupes\Documents\UNI STUFF\Utility App Code\FirstFileForGUI\FirstFileForGUI\x64\Debug\FirstFileForGUI.vcxproj.SuggestedBindingRedirects.cache
 C:\Users\rupes\Documents\UNI STUFF\Utility App Code\FirstFileForGUI\FirstFileForGUI\x64\Debug\FirstFileForGUI.MyForm.resources
 C:\Users\rupes\Documents\UNI STUFF\Utility App Code\FirstFileForGUI\FirstFileForGUI\x64\Debug\FirstFileForGUI.vcxproj.GenerateResource.cache
+C:\Users\rupes\Documents\UNI STUFF\Utility App Code\UtilityApp\FirstFileForGUI\FirstFileForGUI\x64\Debug\FirstFileForGUI.vcxproj.AssemblyReference.cache
+C:\Users\rupes\Documents\UNI STUFF\Utility App Code\UtilityApp\FirstFileForGUI\FirstFileForGUI\x64\Debug\FirstFileForGUI.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\rupes\Documents\UNI STUFF\Utility App Code\UtilityApp\FirstFileForGUI\FirstFileForGUI\x64\Debug\FirstFileForGUI.MyForm.resources
+C:\Users\rupes\Documents\UNI STUFF\Utility App Code\UtilityApp\FirstFileForGUI\FirstFileForGUI\x64\Debug\FirstFileForGUI.vcxproj.GenerateResource.cache
