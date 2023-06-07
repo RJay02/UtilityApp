@@ -619,93 +619,117 @@ private: System::Windows::Forms::Button^ button6;
 			// 
 			// button4
 			// 
+			this->button4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button4->ForeColor = System::Drawing::SystemColors::Control;
 			this->button4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button4.Image")));
 			this->button4->Location = System::Drawing::Point(473, 61);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(145, 145);
 			this->button4->TabIndex = 63;
-			this->button4->Text = L"button4";
+			this->button4->Text = L"£1.65";
 			this->button4->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button4->UseVisualStyleBackColor = true;
 			// 
 			// button2
 			// 
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->ForeColor = System::Drawing::SystemColors::Control;
 			this->button2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.Image")));
 			this->button2->Location = System::Drawing::Point(167, 61);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(145, 145);
 			this->button2->TabIndex = 64;
-			this->button2->Text = L"button2";
+			this->button2->Text = L"£1.20";
 			this->button2->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button2->UseVisualStyleBackColor = true;
 			// 
 			// button3
 			// 
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button3->ForeColor = System::Drawing::SystemColors::Control;
 			this->button3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button3.Image")));
 			this->button3->Location = System::Drawing::Point(16, 212);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(145, 145);
 			this->button3->TabIndex = 65;
-			this->button3->Text = L"button3";
+			this->button3->Text = L"£2.00";
 			this->button3->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button3->UseVisualStyleBackColor = true;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click_1);
 			// 
 			// button5
 			// 
+			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button5->ForeColor = System::Drawing::SystemColors::Control;
 			this->button5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button5.Image")));
 			this->button5->Location = System::Drawing::Point(16, 61);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(145, 145);
 			this->button5->TabIndex = 66;
-			this->button5->Text = L"button5";
+			this->button5->Text = L"£1.50";
 			this->button5->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button5->UseVisualStyleBackColor = true;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click_1);
 			// 
 			// button6
 			// 
+			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button6->ForeColor = System::Drawing::SystemColors::Control;
 			this->button6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button6.Image")));
 			this->button6->Location = System::Drawing::Point(318, 61);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(145, 145);
 			this->button6->TabIndex = 67;
-			this->button6->Text = L"button6";
+			this->button6->Text = L"£2.00";
 			this->button6->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button6->UseVisualStyleBackColor = true;
 			// 
 			// button8
 			// 
+			this->button8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button8->ForeColor = System::Drawing::SystemColors::Control;
 			this->button8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button8.Image")));
 			this->button8->Location = System::Drawing::Point(167, 212);
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(145, 145);
 			this->button8->TabIndex = 68;
-			this->button8->Text = L"button8";
+			this->button8->Text = L"£2.00";
 			this->button8->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button8->UseVisualStyleBackColor = true;
 			this->button8->Click += gcnew System::EventHandler(this, &MyForm::button8_Click);
 			// 
 			// button9
 			// 
+			this->button9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button9->ForeColor = System::Drawing::SystemColors::Control;
 			this->button9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button9.Image")));
 			this->button9->Location = System::Drawing::Point(318, 212);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(145, 145);
 			this->button9->TabIndex = 69;
-			this->button9->Text = L"button9";
+			this->button9->Text = L"£1.55";
 			this->button9->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button9->UseVisualStyleBackColor = true;
 			this->button9->Click += gcnew System::EventHandler(this, &MyForm::button9_Click);
 			// 
 			// button10
 			// 
+			this->button10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button10->ForeColor = System::Drawing::SystemColors::Control;
 			this->button10->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button10.Image")));
 			this->button10->Location = System::Drawing::Point(473, 212);
 			this->button10->Name = L"button10";
 			this->button10->Size = System::Drawing::Size(145, 145);
 			this->button10->TabIndex = 70;
-			this->button10->Text = L"button10";
+			this->button10->Text = L"£2.50";
 			this->button10->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
 			this->button10->UseVisualStyleBackColor = true;
 			this->button10->Click += gcnew System::EventHandler(this, &MyForm::button10_Click_1);
