@@ -210,9 +210,9 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->button25 = (gcnew System::Windows::Forms::Button());
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
 			this->Amount = (gcnew System::Windows::Forms::Label());
+			this->Total = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->Total = (gcnew System::Windows::Forms::Label());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->button10 = (gcnew System::Windows::Forms::Button());
 			this->button9 = (gcnew System::Windows::Forms::Button());
@@ -496,6 +496,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->button7->TabIndex = 14;
 			this->button7->Text = L"Remove Item";
 			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
 			// 
 			// button1
 			// 
@@ -507,6 +508,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->button1->TabIndex = 12;
 			this->button1->Text = L"Reset";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click_1);
 			// 
 			// button25
 			// 
@@ -518,6 +520,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->button25->TabIndex = 11;
 			this->button25->Text = L"Pay";
 			this->button25->UseVisualStyleBackColor = true;
+			this->button25->Click += gcnew System::EventHandler(this, &MyForm::button25_Click);
 			// 
 			// panel4
 			// 
@@ -547,6 +550,18 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->Amount->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
 			this->Amount->Click += gcnew System::EventHandler(this, &MyForm::label5_Click);
 			// 
+			// Total
+			// 
+			this->Total->BackColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->Total->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->Total->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->Total->Location = System::Drawing::Point(173, 66);
+			this->Total->Name = L"Total";
+			this->Total->Size = System::Drawing::Size(111, 42);
+			this->Total->TabIndex = 2;
+			this->Total->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
 			// label3
 			// 
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
@@ -568,18 +583,6 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->label2->TabIndex = 0;
 			this->label2->Text = L"Cost";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// Total
-			// 
-			this->Total->BackColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->Total->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->Total->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->Total->Location = System::Drawing::Point(173, 66);
-			this->Total->Name = L"Total";
-			this->Total->Size = System::Drawing::Size(111, 42);
-			this->Total->TabIndex = 2;
-			this->Total->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// panel2
 			// 
@@ -755,7 +758,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->panel5->Controls->Add(this->dataGridView1);
 			this->panel5->Location = System::Drawing::Point(989, 12);
 			this->panel5->Name = L"panel5";
-			this->panel5->Size = System::Drawing::Size(450, 572);
+			this->panel5->Size = System::Drawing::Size(405, 572);
 			this->panel5->TabIndex = 3;
 			// 
 			// dataGridView1
@@ -790,7 +793,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1388, 596);
+			this->ClientSize = System::Drawing::Size(1403, 596);
 			this->Controls->Add(this->panel5);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->panel2);
@@ -843,25 +846,27 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			}
 		}
 
-			  ///private:System::Void Change()
-			  //{
-				  //try 
-				  //{
-					//  double q, c;
-					  //if (dataGridView1->Rows->Count > 0)
-				//	  {
-				//		  c = Convert::ToInt32(Cash->Text);
-				//		  Change->Text = String::Format("{0:c2}", (c - Total));
- 				//	  }
-				//  }
-				//  catch (Exception^ ex)
-				//  {
-				//	  MessageBox::Show(ex->Message);
-				//  }
-			//  }
+			  private:System::Void Change()
+			  {
+				  try 
+				  {
+					  double q, c;
+					  q = 0;
+					  if (dataGridView1->Rows->Count > 0)
+					  {
+						  q = CostofItem();
+						  c = Convert::ToInt32(Amount->Text);
+						  lblChange->Text = String::Format("{0:c2}", (c - q));
+ 					  }
+				  }
+				  catch (Exception^ ex)
+				  {
+					  MessageBox::Show(ex->Message);
+				  }
+			  }
 
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
-		Pay->Items->Add("Coins");
+		Pay->Items->Add("Cash");
 		Pay->Items->Add("Card");
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -925,12 +930,18 @@ private: System::Void button24_Click(System::Object^ sender, System::EventArgs^ 
 }
 private: System::Void button10_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	double PriceofItem = 2.50;
+	dataGridView1->Rows->Add("Dairy Milk Oreo", "1", PriceofItem);
+	AddCost();
 }
 private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
 	double PriceofItem = 1.55;
+	dataGridView1->Rows->Add("Walkers McCoy's", "1", PriceofItem);
+	AddCost();
 }
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
 	double PriceofItem = 2;
+	dataGridView1->Rows->Add("Walkers Max", "1", PriceofItem);
+	AddCost();
 }
 private: System::Void button5_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	double PriceofItem = 1.5;
@@ -939,15 +950,60 @@ private: System::Void button5_Click_1(System::Object^ sender, System::EventArgs^
 }
 private: System::Void button3_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	double PriceofItem = 2;
+	dataGridView1->Rows->Add("Sensations", "1", PriceofItem);
+	AddCost();
 }
 private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	double PriceofItem = 1.2;
+	dataGridView1->Rows->Add("Wispa", "1", PriceofItem);
+	AddCost();
 }
 private: System::Void button6_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	double PriceofItem = 2;
+	dataGridView1->Rows->Add("Lucozade", "1", PriceofItem);
+	AddCost();
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 	double PriceofItem = 1.65;
+	dataGridView1->Rows->Add("Ribena", "1", PriceofItem);
+	AddCost();
+}
+private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	if (Pay->Text == "Cash")
+	{
+		Change();
+	}
+	else
+	{
+		lblChange->Text = "";
+		Amount->Text = "0";
+	}
+}
+private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	for each (DataGridViewRow ^ row in this->dataGridView1->SelectedRows)
+	{
+		dataGridView1->Rows->Remove(row);
+	}
+	AddCost();
+
+	if (Pay->Text == "Cash")
+	{
+		Change();
+	}
+	else
+	{
+		lblChange->Text = "";
+		Amount->Text = "0";
+	}
+}
+private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	dataGridView1->Rows->Clear();
+	lblChange->Text = "";
+	Amount->Text = "0";
+	Total->Text = "";
+	Pay->Text = "";
 }
 };
 }
