@@ -420,10 +420,10 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			// 
 			this->panel7->BackColor = System::Drawing::SystemColors::Control;
 			this->panel7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel7->Controls->Add(this->Pay);
+			this->panel7->Controls->Add(this->Amount);
 			this->panel7->Controls->Add(this->lblChange);
 			this->panel7->Controls->Add(this->label8);
-			this->panel7->Controls->Add(this->label9);
+			this->panel7->Controls->Add(this->label2);
 			this->panel7->Location = System::Drawing::Point(318, 11);
 			this->panel7->Name = L"panel7";
 			this->panel7->Size = System::Drawing::Size(320, 132);
@@ -434,7 +434,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->Pay->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->Pay->FormattingEnabled = true;
-			this->Pay->Location = System::Drawing::Point(187, 14);
+			this->Pay->Location = System::Drawing::Point(179, 17);
 			this->Pay->Name = L"Pay";
 			this->Pay->Size = System::Drawing::Size(111, 45);
 			this->Pay->TabIndex = 3;
@@ -446,7 +446,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->lblChange->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->lblChange->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblChange->Location = System::Drawing::Point(187, 66);
+			this->lblChange->Location = System::Drawing::Point(199, 66);
 			this->lblChange->Name = L"lblChange";
 			this->lblChange->Size = System::Drawing::Size(111, 42);
 			this->lblChange->TabIndex = 2;
@@ -467,7 +467,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			// 
 			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label9->Location = System::Drawing::Point(8, 14);
+			this->label9->Location = System::Drawing::Point(4, 20);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(169, 42);
 			this->label9->TabIndex = 0;
@@ -526,10 +526,10 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			// 
 			this->panel4->BackColor = System::Drawing::SystemColors::Control;
 			this->panel4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->panel4->Controls->Add(this->Amount);
+			this->panel4->Controls->Add(this->Pay);
 			this->panel4->Controls->Add(this->Total);
 			this->panel4->Controls->Add(this->label3);
-			this->panel4->Controls->Add(this->label2);
+			this->panel4->Controls->Add(this->label9);
 			this->panel4->Location = System::Drawing::Point(3, 11);
 			this->panel4->Name = L"panel4";
 			this->panel4->Size = System::Drawing::Size(309, 132);
@@ -542,7 +542,7 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->Amount->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->Amount->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Amount->Location = System::Drawing::Point(173, 13);
+			this->Amount->Location = System::Drawing::Point(199, 11);
 			this->Amount->Name = L"Amount";
 			this->Amount->Size = System::Drawing::Size(111, 42);
 			this->Amount->TabIndex = 3;
@@ -556,17 +556,18 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			this->Total->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->Total->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->Total->Location = System::Drawing::Point(173, 66);
+			this->Total->Location = System::Drawing::Point(179, 76);
 			this->Total->Name = L"Total";
 			this->Total->Size = System::Drawing::Size(111, 42);
 			this->Total->TabIndex = 2;
 			this->Total->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->Total->Click += gcnew System::EventHandler(this, &MyForm::Total_Click);
 			// 
 			// label3
 			// 
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(20, 70);
+			this->label3->Location = System::Drawing::Point(25, 76);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(111, 42);
 			this->label3->TabIndex = 1;
@@ -575,13 +576,13 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			// 
 			// label2
 			// 
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 21.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(20, 14);
+			this->label2->Location = System::Drawing::Point(-7, 11);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(111, 42);
+			this->label2->Size = System::Drawing::Size(208, 42);
 			this->label2->TabIndex = 0;
-			this->label2->Text = L"Cost";
+			this->label2->Text = L"Money Given";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// panel2
@@ -969,7 +970,6 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	AddCost();
 }
 private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ e) {
-	
 	if (Pay->Text == "Cash")
 	{
 		Change();
@@ -980,6 +980,7 @@ private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ 
 		Amount->Text = "0";
 	}
 	MessageBox::Show("Your items has been dispensed");
+	MessageBox::Show("You have received a change of " + (lblChange->Text));
 	dataGridView1->Rows->Clear();
 	lblChange->Text = "";
 	Amount->Text = "0";
@@ -1010,6 +1011,8 @@ private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^
 	Amount->Text = "0";
 	Total->Text = "";
 	Pay->Text = "";
+}
+private: System::Void Total_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
