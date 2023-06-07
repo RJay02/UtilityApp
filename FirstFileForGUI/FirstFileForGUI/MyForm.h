@@ -979,6 +979,12 @@ private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ 
 		lblChange->Text = "";
 		Amount->Text = "0";
 	}
+	MessageBox::Show("Your items has been dispensed");
+	dataGridView1->Rows->Clear();
+	lblChange->Text = "";
+	Amount->Text = "0";
+	Total->Text = "";
+	Pay->Text = "";
 }
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
 	
