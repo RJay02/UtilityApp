@@ -17,9 +17,7 @@ namespace FirstFileForGUI {
 		MyForm(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: Add the constructor code here
-			//
+
 		}
 
 	protected:
@@ -35,64 +33,19 @@ namespace FirstFileForGUI {
 		}
 	private: System::Windows::Forms::Panel^ panel1;
 	protected:
-
 	private: System::Windows::Forms::Panel^ panel3;
 	private: System::Windows::Forms::Panel^ panel6;
-
 	private: System::Windows::Forms::Panel^ panel4;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Panel^ panel7;
 	private: System::Windows::Forms::Label^ lblChange;
-
-
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::Label^ Amount;
 	private: System::Windows::Forms::Label^ Total;
-
-
 	private: System::Windows::Forms::Label^ label3;
-
 	private: System::Windows::Forms::Button^ button25;
 	private: System::Windows::Forms::ComboBox^ Pay;
-
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Button^ button19;
 	private: System::Windows::Forms::Button^ button20;
 	private: System::Windows::Forms::Button^ button21;
@@ -106,68 +59,23 @@ namespace FirstFileForGUI {
 	private: System::Windows::Forms::Button^ button14;
 	private: System::Windows::Forms::Button^ button15;
 	private: System::Windows::Forms::Panel^ panel2;
-
-
-
-
-
-
-
-
-
-
-
-
-private: System::Windows::Forms::Label^ Label6;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-private: System::Windows::Forms::Label^ label10;
-
-private: System::Windows::Forms::Button^ button1;
-private: System::Windows::Forms::Button^ button7;
-private: System::Windows::Forms::Button^ button5;
-private: System::Windows::Forms::Button^ button3;
-private: System::Windows::Forms::Button^ button2;
-private: System::Windows::Forms::Button^ button4;
-private: System::Windows::Forms::Button^ button10;
-private: System::Windows::Forms::Button^ button9;
-private: System::Windows::Forms::Button^ button8;
-private: System::Windows::Forms::Button^ button6;
-private: System::Windows::Forms::Panel^ panel5;
-private: System::Windows::Forms::DataGridView^ dataGridView1;
-private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
-private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
-private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	private: System::Windows::Forms::Label^ Label6;
+	private: System::Windows::Forms::Label^ label10;
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button10;
+	private: System::Windows::Forms::Button^ button9;
+	private: System::Windows::Forms::Button^ button8;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Panel^ panel5;
+	private: System::Windows::Forms::DataGridView^ dataGridView1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column1;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column2;
+	private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 
 	protected:
 
@@ -816,6 +724,9 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 		}
 #pragma endregion
 
+		/// <summary>
+		/// Function to calculate the cost of any item in the vending machine  
+		/// </summary>
 		Double CostofItem()
 		{
 			try {
@@ -832,6 +743,10 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 			}
 		}
 
+		/// <summary>
+		/// Function to calculate the total after the items have been selected 
+		/// </summary>
+
 		public: System::Void AddCost()
 		{
 			try
@@ -846,6 +761,9 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 				MessageBox::Show(ex->Message);
 			}
 		}
+			  /// <summary>
+			  /// Function to calculate the change needed to be paid 
+			  /// </summary>
 
 			  private:System::Void Change()
 			  {
@@ -866,10 +784,22 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^ Column3;
 				  }
 			  }
 
+	/// <summary>
+	/// Class for the drop down menu to select the method of payement either cash or card
+	/// </summary>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
+	/// <returns></returns>
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 		Pay->Items->Add("Cash");
 		Pay->Items->Add("Card");
 	}
+	/// <summary>
+	/// All the other classes to make the buttons and everything function on the GUI
+	/// </summary>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
+	/// <returns></returns>
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
@@ -908,6 +838,12 @@ private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void comboBox1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 	
+/// <summary>
+/// Function that allow the user to enter the amount of cash being paid
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+/// <returns></returns>
 private: System::Void NumbersOnly(System::Object^ sender, System::EventArgs^ e) {
 
 	Button^ b = safe_cast<Button^>(sender);
@@ -926,6 +862,12 @@ private: System::Void NumbersOnly(System::Object^ sender, System::EventArgs^ e) 
 		else
 			Amount->Text = Amount->Text + b->Text;
 	}
+/// <summary>
+/// All the functions below are for the items in the vending machine to make them work
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+/// <returns></returns>
 private: System::Void button24_Click(System::Object^ sender, System::EventArgs^ e) {
 			Amount->Text = "0";
 }
@@ -969,6 +911,12 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	dataGridView1->Rows->Add("Ribena", "1", PriceofItem);
 	AddCost();
 }
+/// <summary>
+/// Function for the "Pay" button on the GUI
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+/// <returns></returns>
 private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ e) {
 	if (Pay->Text == "Cash")
 	{
@@ -987,6 +935,12 @@ private: System::Void button25_Click(System::Object^ sender, System::EventArgs^ 
 	Total->Text = "";
 	Pay->Text = "";
 }
+/// <summary>
+/// Function for the "REMOVE ITEM" button on the GUI
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+/// <returns></returns>
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
 	
 	for each (DataGridViewRow ^ row in this->dataGridView1->SelectedRows)
@@ -1005,6 +959,12 @@ private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e
 		Amount->Text = "0";
 	}
 }
+/// <summary>
+/// Function for the "Reset" button in the GUI
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
+/// <returns></returns>
 private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	dataGridView1->Rows->Clear();
 	lblChange->Text = "";
